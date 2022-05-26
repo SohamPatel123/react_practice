@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <div id="main"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script>
+        const mainElement = document.getElementById('main');
+        const element = React.createElement('div',
+            {
+                children: "Hello this is about creating element and appending child",
+                className: 'innerElement',
+            },
+            ", This is also part of the child statement."
+        )
+        ReactDOM.render(element,mainElement);
+    </script>
+</html>
